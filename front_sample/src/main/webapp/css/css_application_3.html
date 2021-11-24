@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+	<style type="text/css">
+	
+		body {
+			background-color: #cccccc;
+		}
+		
+		#t1 {
+			border-top: solid 2px #cccccc;
+			border-bottom: solid 2px #cccccc;
+		}
+		
+		div.mainbody {
+			background-color: #ffffff;
+		}
+		
+		h3 {
+			text-align: center;
+			padding: 15px;
+			margin: 5px;
+		}
+		
+		table {
+			padding: 20px 50px;
+		}
+		table, th, tr, td {
+			border-collapse:  collapse;
+			padding: 8px;
+		}
+		
+		.buttons {
+			text-align: right;
+			padding-top: 10px;
+			padding-right: 30px;
+			padding-bottom: 30px;
+			margin: 10px;
+		}
+		
+		#t1 .col1{
+			width: 120px;
+		}
+		
+		
+		#msg {
+			vertical-align: top;
+		}
+		
+		textarea{
+			width: 450px;
+			height: 120px;
+		
+		}
+		
+ 		.buttons input {
+			width: 120px;
+			height: 60px;
+		} 
+		
+	</style>
+	
+</head>
+<body>
+
+	<form action="">
+		<div class="mainbody">
+			<h3>회원가입 폼</h3>
+			<div id="t1">
+				<table>
+				
+					<tr>
+						<th class="col1"></th>
+						<th class="col2"></th>
+					</tr>
+					
+					<tr>
+						<td class="row1">아이디</td>
+						<td><input type="text"></td>
+					</tr>
+					
+					<tr>
+						<td>비밀번호</td>
+						<td><input type="password"></td>
+					</tr>
+					
+					<tr>
+						<td>비밀번호 확인</td>
+						<td><input type="password"></td>
+					</tr>
+					
+					<tr>
+						<td>이름</td>
+						<td><input type="text"></td>
+					</tr>
+					
+					<tr>
+						<td>이메일</td>
+						<td>
+							<input type="text"> @ 
+							<select>
+									<option>직접입력</option>
+									<option>naver.com</option>
+									<option>gmail.com</option>
+									<option>daum.net</option>
+									<option>kakao.com</option>
+							</select>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>이메일 수신</td>
+						<td>
+							<input type="radio" value="email" name="email" checked="checked"> 비수신 
+							<input type="radio" value="email" name="email"> 수신
+						</td>
+					</tr>
+					
+					<tr>
+						<td>가입경로</td>
+						<td>
+							<input type="checkbox" name="route"> 친구추천
+							<input type="checkbox" name="route"> 인터넷검색
+							<input type="checkbox" name="route" checked="checked"> 기타
+						</td>
+					</tr>
+					
+					<tr id="msg">
+						<td>인사말</td>
+						<td><textarea rows="6" cols="40"></textarea></td>
+					</tr>
+					
+				</table>
+			</div>
+
+			<div class="buttons">
+				<input type="submit" value="저장하기"> 
+				<input type="reset" value="취소하기">
+			</div>
+
+		</div>
+
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 폼 태그 : 사용자가 키보드로 데이터를 입력하거나 마우스로 선택할 수 있는 양식(서식) -->
+	<form action="sample1.html"> <!-- submit 을 누르면 action 값에 해당 html 파일로 이동된다.  -->
+		이름 : <input type="text" value="무한도전" readonly="readonly"> <br>
+		<!-- 태그명 속성명=값 -->
+		
+		<!-- autofocus : cursor -->
+		아이디 : <input type="text" placeholder="아이디 입력" autofocus="autofocus"> <!-- prompt text  -->
+		<br>
+		비밀번호 : <input type="password">
+		<!-- 태그명 속성명=값 -->
+		회원 등급 : <input type="text" value="일반" disabled="disabled">
+		<br><br>
+		<input type="radio" value="email" name="email"> 예
+		<input type="radio" value="button" name="email"> 아니오
+		<br><br>
+		<input type="checkbox" name="item1" checked="checked"> 뉴스 
+		<input type="checkbox" name="item1" > 드라마 
+		<input type="checkbox" name="item1" > 스포츠
+		<br><br>
+		
+		이메일 : <input type="text"> @ 
+
+		<select>
+			<option>직접 입력</option>
+			<option>naver.com</option>
+			<option>gmail.com</option>
+		</select>
+		<br><br><br>
+		자기소개 : <textarea rows="6" cols="50"></textarea> <!-- row : 행문자수, col : 열 문자수 픽셀단위가 아니라 글자수 단위-->
+		<br><br><br>
+		<input type="file"> <!-- javafx에서 filechooser 와 동일 -->
+		<br><br>
+		<input type="button" value="button"> <!-- 폼 이벤트 -->
+		<br><br>
+		<input type="submit" value="저장"> <!-- 폼 전송 -->
+		<br><br>
+		<input type="reset" value="다시쓰기"> <!-- 폼 초기화 -->
+		<br>
+	</form>
+</body>
+</html>

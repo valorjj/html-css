@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+header {
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* #box1, #box2, #box3, #box4, #box5, #box6 {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border: solid 2px #99ff00;
+	background-color: yellow;
+} */
+
+/* 상위 요소에 relative 하위 요소에  absolute */
+#parent {
+	width: 700px;
+	height: 550px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #003322;
+}
+
+#parent div {
+	position: absolute;
+	width: 100px;
+	height: 70px;
+	border: solid 2px #99ff00;
+	background-color: yellow;
+	border-radius: 20px;
+	text-align: center;
+	box-shadow: 3px 3px 10px #72da25;
+	padding: 20px 0 0 0;
+}
+
+#box1 {
+	left: 41.5%;
+	top: 14%;
+}
+
+#box2 {
+	left: 20%;
+	top: 26%;
+}
+
+#box3 {
+	left: 64%;
+	top: 26%;
+}
+
+#box4 {
+	left: 20%;
+	top: 50%;
+}
+
+#box5 {
+	left: 64%;
+	top: 50%;
+}
+
+#box6 {
+	left: 41.5%;
+	top: 68%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 16px;
+}
+</style>
+</head>
+<body>
+	<header>
+		<h3>프로그래밍 강좌</h3>
+	</header>
+	<div id="parent">
+		<div id="box1">
+			<a href="#">HTML<br>강좌
+			</a>
+		</div>
+		<div id="box2">
+			<a href="#">CSS<br>강좌
+			</a>
+		</div>
+		<div id="box3">
+			<a href="#">파이썬<br>강좌
+			</a>
+		</div>
+		<div id="box4">
+			<a href="#">C#<br>강좌
+			</a>
+		</div>
+		<div id="box5">
+			<a href="#">자바<br>강좌
+			</a>
+		</div>
+		<div id="box6">
+			<a href="#">PHP<br>강좌
+			</a>강좌
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1> form tag 2</h1>
+	
+	<form action="">
+		<label>colors</label> <!-- label 안에 여러가지 속성값을 추가할 수 있다.  -->
+		<input type="color">
+		<br> <label>date</label>
+		<br> <input type="date">
+		<br> <label>user input (date/time)</label><input type="datetime" required="required">
+		<br> <label>user select (date/time)</label><input type="datetime-local">
+		<br> <label>email[requires "@"]</label><input type="email" size="20">
+		<br> <label>monthly calendar</label><input type="month"> <!-- 월간 선택 상자 -->
+		<br> <label>weekly calendar</label><input type="week"> <!-- 주간 선택 상자  -->
+		<br> <label>time selection</label><input type="time"> <!-- 시간 선택 상자 -->
+		<br> <label>enter quantity</label><input type="number"> <!-- 수량 입력 상자 -->
+		<br> <label>scroll bar (volume controller)</label><input type="range" min="0" max="100" step="1">
+		<!-- 스크롤바 min, max, step 지정 가능 -->
+		
+		<!-- maxlength : 입력 상자[필드]의 최대 입력 길이, 최대 입력 문자 수 -->
+		<!-- size : 상자 길이와 관련 [문자 입력 수] -->
+		<!-- required : 필수 입력 [입력 안하면 전송 불가] -->
+		<!-- pattern : script 에서 많이 쓰는 속성 -->
+		
+		<br> <label>list</label> <input list="list">
+		
+		<datalist id="list">
+			<option value="naver">
+			<option value="google">
+			<option value="chrome">
+		</datalist>
+		
+		
+		<input type="submit">
+	</form>
+
+
+</body>
+</html>

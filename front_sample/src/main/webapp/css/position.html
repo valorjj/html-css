@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+#a, #b, #c, #d, #e, #f, #g, #h, #i, #j, #k, #l, #h2 {
+	width: 100px;
+	height: 60px;
+	background-color: yellow;
+	border: solid 1px black;
+}
+
+/*
+	#b{ margin: 0 auto;} 박스권 가운데 정렬
+	#a{ text-align: center;} 박스 내 내용물을 가운데 정렬
+	*/
+
+/* 기존에 있던 위치가 기준점 */
+#b {
+	position: relative; /* 상대위치 */
+	left: 50px;
+	top: 30px;
+	background-color: red;
+}
+
+#e {
+	position: absolute; /* 절대위치 */
+	left: 80px;
+	top: 50px;
+	background-color: green;
+}
+
+#parent {
+	width: 350px;
+	height: 250px;
+	border: solid 1px black;
+	position: relative; /* id="parent" 안에 속한 div 들은 기준이 #parent 로 지정된다.  */
+}
+
+#parent2 {
+	width: 350px;
+	height: 250px;
+	border: solid 1px black;
+	position: relative;
+}
+
+#h2{
+	position: relative; left: 100px; top: 30px;
+}
+
+#h {
+	position: absolute;
+	left: 30px;
+	top: 30px;
+}
+
+#k {
+	position: fixed;
+	top: 30px;
+	left: 200px;
+}
+</style>
+</head>
+<body>
+
+
+
+
+	<h3>상대 위치</h3>
+	<div id="a">요소 A</div>
+	<div id="b">요소 B [상대위치]</div>
+	<div id="c">요소 C</div>
+
+	<h3>절대 위치</h3>
+	<div id="d">요소 D</div>
+	<div id="e">요소 E [절대위치]</div>
+	<div id="f">요소 F</div>
+
+	<h3>절대 위치</h3>
+	<div id="parent">
+		<div id="g">요소 G</div>
+		<div id="h">요소 H</div>
+		<div id="i">요소 I</div>
+	</div>
+
+	<h3>절대 위치 지정</h3>
+	<div id="parent2">
+		<div id="g">요소 G</div>
+		<div id="h2">요소 H2</div>
+		<div id="i">요소 I</div>
+	</div>
+
+
+	<h3>위치</h3>
+	<div id="j">요소 G</div>
+	<div id="k">요소 H</div>
+	<div id="l">요소 I</div>
+
+</body>
+</html>

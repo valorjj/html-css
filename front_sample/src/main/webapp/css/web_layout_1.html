@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<style type="text/css">
+#box1, #box2, #box3 {
+	width: 400px;
+	border: solid 1px orange;
+	margin: 0 auto; /* 가로 바깥 여백을 자동으로 하겠다 */ /* 세로 가로 순서 */
+	/* 브라우저 크기에 따라서 좌우 여백을 자동으로 하겠다. */
+	padding: 30px;
+}
+
+#box2 {
+	text-align: right;
+}
+
+#box3 {
+	text-align: center;
+}
+
+div {
+	width: 100px;
+	height: 50px;
+	margin: 10px;
+	color: black;
+	text-align: center;
+}
+
+#a, #b {
+	background-color: green;
+}
+
+#c {
+	float: right;
+	/* 아래 있던 D 가 올라오고 C 가 맨 오른쪽으로 이동했다. 다른 요소와 해당 요소를 같은 줄에 배치할 수 있다. */
+	background-color: blue;
+}
+
+#d {
+	float: left;
+	background-color: gray
+}
+
+#f {
+	float: left;
+}
+
+h3 {
+	clear: both;
+}
+
+
+</style>
+</head>
+
+<body>
+
+	<!-- div : block -->
+	<!-- span : in-line -->
+
+	<div id="box1">안녕하세요</div>
+
+	<div id="box2">반갑습니다.</div>
+
+	<div id="box3">
+		<img alt="" src="../images/cat.jpg" width="250">
+	</div>
+
+	<div id="a">요소 A</div>
+	<div id="b">요소 B</div>
+	<div id="c">요소 C</div>
+	<div id="d">요소 D</div>
+
+	<div id="f">
+		<img alt="" src="../images/cat.jpg" width="250">
+	</div>
+
+	<h3>고양이</h3>
+	<p>고양이입니다.</p>
+
+</body>
+</html>

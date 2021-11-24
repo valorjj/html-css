@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+#web {
+	margin: 0 auto;
+	border: solid 1px black
+}
+
+#header {
+	background-color: blue;
+	text-align: center;
+	font-size: 40px;
+}
+
+#container {
+	background-color: #cccccc;
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 40px;
+	height: 600px;
+}
+
+#footer {
+	background-color: blue;
+	text-align: center;
+	font-size: 40px;
+	clear: both;
+}
+
+#left {
+	width: 900px;
+	background-color: red;
+	float: left;
+	height: 600px;
+}
+
+#right {
+	width: 300px;
+	background-color: orange;
+	float: right;
+	height: 500px;
+}
+
+header {
+	text-align: center;
+	background-color: blue;
+	font-size: 40px;
+}
+
+footer {
+	background-color: blue;
+	font-size: 40px;
+	text-align: center;
+	clear: both;
+}
+
+section {
+	width: 900px;
+	background-color: red;
+	height: 600px;
+	float: left;
+}
+
+aside {
+	width: 300px;
+	background-color: orange;
+	height: 500px;
+	float: right;
+}
+</style>
+</head>
+<body>
+
+	<div id="web">
+		<!-- 웹 전체를 가리키는 박스권 -->
+		<div id="header">상단 헤더</div>
+
+		<div id="container">
+
+			<div id="left">메인 왼쪽메뉴</div>
+
+			<div id="right">메인 오른쪽메뉴</div>
+
+		</div>
+
+
+
+		<div id="footer">하단 푸터</div>
+
+
+	</div>
+
+
+	<!-- header, footer 태그를 사용했다. layout tag 를 사용했다. -->
+
+	<div id="web">
+		<header>상단 헤더 </header>
+
+		<div id="container">
+			<section>메인 섹션</section>
+
+			<aside>사이드 바</aside>
+
+		</div>
+
+
+		<footer>하단 푸터</footer>
+
+	</div>
+
+
+</body>
+</html>
