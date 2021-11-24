@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 <style type="text/css">
 
+	.main_image img {max-width: 100%;}
+
 </style>
 </head>
 <body>
