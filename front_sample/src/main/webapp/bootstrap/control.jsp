@@ -63,8 +63,9 @@
 		</div>
 		<div class="col-sm-6">
 			<img alt="" src="siam.JPG" class="rounded-circle img-fluid">
+			<!-- img-fluid 쓰면 반응형 -->
 		</div>
-				<div class="col-sm-6">
+		<div class="col-sm-6">
 			<img alt="" src="siam.JPG" class="img-thumbnail img-fluid">
 		</div>
 	</div>
