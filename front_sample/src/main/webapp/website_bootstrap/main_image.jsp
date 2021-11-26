@@ -8,7 +8,7 @@
 	<style type="text/css">
 	
 		.carousel-item img{
-			width: 1107px;
+			width: 1110px;
 			height: 400px;
 		}
 		
@@ -19,7 +19,7 @@
 
 	<div class="container">
 
-		<div id="carousel_contents" class="carousel slide" data-ride="carousel" data-interval="2500">
+		<div id="carousel_contents" class="carousel slide" data-ride="carousel">
 
 			<div class="carousel-item active">
 				<img alt="first slide" src="apple1.JPG">

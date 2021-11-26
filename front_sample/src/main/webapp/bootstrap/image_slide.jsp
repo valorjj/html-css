@@ -71,13 +71,7 @@
 			<a class="carousel-control-next" href="#carouselcontents"
 				data-slide="next"> <span class="carousel-control-next-icon"></span>
 			</a>
-
-
-
-
-
 		</div>
-
 	</div>
 
 </body>
